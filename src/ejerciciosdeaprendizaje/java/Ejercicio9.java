@@ -22,9 +22,9 @@ public class Ejercicio9 {
         Scanner leer=new Scanner (System.in);
         System.out.println("Ingrese una frase o palabra");
         String palabra =leer.nextLine();
-        String caracter = (palabra.substring(1,1));
-        System.out.println(caracter);
-        if (caracter.equals("A")){
+        System.out.println(palabra.substring(0,1 ));
+        String caracter = palabra.substring(0, 1);
+        if (caracter.equals("A")|| (caracter.equals("a"))){
             System.out.println("CORRECTO");
         }else {
             System.out.println("Incorrecto");
